@@ -71,7 +71,15 @@ while not end_of_game:
     #Check if user has got all letters.
     if "_" not in display:
         end_of_game = True
-        print("You win.")
+        print('''CONGRATULATIONS!. YOU WIN!!\n
+                   88   
+                   ""    
+                                    
+8b      db      d8 88 8b,dPPYba,     
+`8b    d88b    d8' 88 88P'   `"8a    
+ `8b  d8'`8b  d8'  88 88       88    
+  `8bd8'  `8bd8'   88 88       88    
+    YP      YP     88 88       88 ''')
 
     #TODO-2: - Import the stages from hangman_art.py and make this error go away.
     print(stages[lives])
