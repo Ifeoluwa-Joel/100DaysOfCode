@@ -71,7 +71,7 @@ while not end_of_game: # Main game loop
     # Check if user has got all letters.
     if "_" not in display:
         end_of_game = True
-        print('''CONGRATULATIONS!. YOU WIN!!\n
+        print('''CONGRATULATIONS! YOU WIN!!\n
                    88   
                    ""    
 8b      db      d8 88 8b,dPPYba,     
