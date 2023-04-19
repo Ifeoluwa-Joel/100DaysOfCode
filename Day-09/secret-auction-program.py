@@ -1,6 +1,5 @@
 from art import logo
-#HINT: You can call clear() to clear the output in the console.
-# print(logo)
+print(logo)
 
 bids_collected = {}
 no_more_bids = False
