@@ -10,7 +10,8 @@ def deal_card():
 
 
 def calculate_score(cards):
-    """Takes a list of cards and calculate the score"""
+    """Takes a list of cards and calculate the score.
+    return 0 means Blackjack"""
     if sum(cards) == 21 and len(cards) == 2:
         return 0
     if sum(cards) > 21 and 11 in cards:

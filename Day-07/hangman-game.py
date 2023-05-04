@@ -32,7 +32,7 @@ for _ in range(word_length):
 
 while not end_of_game: # Main game loop
     # Do you want hint?
-    if hint_used < 2:
+    if hint_used < 1:
         random_letter_in_chosen_word = random.choice(split_word(chosen_word))
         player_want_hint = input('Do you want hint? (Y/N) ').lower()
         if player_want_hint == 'y':

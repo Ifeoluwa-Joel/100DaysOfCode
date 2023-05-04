@@ -66,6 +66,18 @@ elif (com_gesture == 's' and user_gesture == 'p'):
 elif (com_gesture == 'p' and user_gesture == 'r'):
     print(f'You chose: Rock\nCOM chose: Paper')
     print("COM WINS\nGame Over")
-else:
-    # print(f' You chose: {user_gesture}\n COM chose:{com_gesture}')
+elif (com_gesture == 'p' and user_gesture == 'p'):
+    print(f' You chose: {user_gesture}\n COM chose:{com_gesture}')
     print("It's a draw.\nTry again!")
+
+elif (com_gesture == 'r' and user_gesture == 'r'):
+    print(f' You chose: {user_gesture}\n COM chose:{com_gesture}')
+    print("It's a draw.\nTry again!")
+
+elif (com_gesture == 's' and user_gesture == 's'):
+    print(f' You chose: {user_gesture}\n COM chose:{com_gesture}')
+    print("It's a draw.\nTry again!")
+
+else:
+    print("You doofus! You have entered an invalid input")
+    print("Game Over!")
