@@ -7,11 +7,11 @@ HARD_LEVEL_TURNS = 5
 # Function to check user's guess against actual number
 def check_answer(guess, answer, turns):
     """checks guess against answer. Returns the no of turns remaining"""
-    # Track the number of turns and reduce by 1 it they get it wrong
+    # Track the number of turns and reduce by 1 if they get it wrong
     if guess > answer:
         print("Too high")
         return turns - 1
-    # Track the number of turns and reduce by 1 it they get it wrong
+    # Track the number of turns and reduce by 1 if they get it wrong
     elif guess < answer:
         print("Too low")
         return turns - 1
@@ -19,9 +19,10 @@ def check_answer(guess, answer, turns):
         print(f"You got it right! The answer was {answer}.")
 
 
-
 # Make function to set difficulty
 def set_difficulty():
+    """Void input.
+    Returns the number of turns user has to guess the number"""
     level = input("Choose a difficulty. Type 'easy' or 'hard': ")
     if level == 'easy':
         return EASY_LEVEL_TURNS
@@ -34,7 +35,6 @@ def game():
     print("Welcome to the Number Guessing Game!")
     print("I'm thinking of a number between 1 and 100")
     answer = randint(1, 100)
-    print(f"Psssst. The number is {answer}")
 
     turns = set_difficulty()
 
@@ -50,12 +50,5 @@ def game():
             return
             # I would have used break, but since this game is in a function
             # <return> does the same thing in this circumstance
-
-
-
-
-
-
-
 
 game()
