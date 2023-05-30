@@ -6,13 +6,14 @@ window = Screen()
 window.title("The Turtle Race!")
 window.setup(width=1410, height=735, starty=0, startx=0)
 window.bgpic(picname='racetrack.gif')
-user_bet = window.textinput(title="Choose player", prompt="Which turtle will win the race? ")
-color_list = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet']
+user1_bet = window.textinput(title="Choose Player 1:", prompt="Which turtle will win the race? ")
+user2_bet = window.textinput(title="Choose Player 2:", prompt="Which turtle will win the race? ")
+color_list = [user1_bet, user2_bet]
 all_turtles = []
 
 color_index = 0
-y_position = 150
-for _ in range(7):
+y_position = 100
+for _ in range(2):
     tim = Turtle(shape='turtle')
     tim.penup()
     tim.color(color_list[color_index])
@@ -20,9 +21,9 @@ for _ in range(7):
     tim.goto(x=-670, y=y_position)
     all_turtles.append(tim)
     color_index += 1
-    y_position -= 50
+    y_position -= 200
 
-if user_bet:
+if user1_bet and user2_bet:
     race_on = True
 
 while race_on:
@@ -31,12 +32,12 @@ while race_on:
         turtle.forward(turtle_pace)
         if turtle.xcor() > 640:
             race_on = False
-            turtle.write('GOAT!')
+            turtle.write('WIN!')
             winning_color = turtle.fillcolor()
-            if winning_color == user_bet:
-                print(f"You won! The {winning_color} turtle won!")
+            if winning_color == user1_bet:
+                print(f"Player 1 won! The {winning_color} turtle won!")
             else:
-                print(f"You lost. The {winning_color} turtle won.")
+                print(f"Player 2 won! The {winning_color} turtle won.")
 
 
 window.exitonclick()
