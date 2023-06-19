@@ -33,7 +33,7 @@ while game_is_on:
         scoreboard.increase_score()
 
     # Detecting collision with the wall
-    if billy.snakehead.xcor() > 280 or billy.snakehead.xcor() < -280 or billy.snakehead.ycor() > 280\
+    if billy.snakehead.xcor() > 280 or billy.snakehead.xcor() < -290 or billy.snakehead.ycor() > 280\
             or billy.snakehead.ycor() < -280:
         game_is_on = False
         scoreboard.game_over()

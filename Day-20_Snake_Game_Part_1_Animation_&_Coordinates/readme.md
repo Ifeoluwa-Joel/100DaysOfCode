@@ -6,3 +6,6 @@ DAY 21 can effectively be ignored because I will be moving all the tutorial file
 
 PS: The vintage-dvd-screensaver.py file is just my attempt to recreate the old colourful bouncing around screensaver
 on DVDs. It has nothing to do with the snake game
+
+EDIT:
+The High Score  feature comes from the lesson on Day 24. 
