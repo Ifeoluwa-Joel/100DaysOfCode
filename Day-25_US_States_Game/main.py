@@ -13,7 +13,6 @@ scoreboard = Scoreboard()
 
 is_game_on = True
 guessed_states = []
-lives = 3
 while is_game_on:
     answer_state = screen.textinput(title=f"({scoreboard.score}/50) Guess the State",
                                     prompt="Enter the name of a State: ").title()
@@ -44,11 +43,6 @@ while is_game_on:
 
 # states to learn.csv
 all_states = data.state.to_list()
-missing_states = []
-for state in all_states:
-    if state not in guessed_states:
-        missing_states.append(state)
-
-
+missing_states = [state for state in all_states if state not in guessed_states]
 unguessed_data = pandas.DataFrame(missing_states)
 unguessed_data.to_csv("C:/Users/Ifeoluwa Joel/Desktop/states_to_learn.csv")
