@@ -1,0 +1,8 @@
+STATIC-TYPED PROGRAMMING LANGUAGES:
+Means that the values of a variable can be changed (not rigid) but the type of the variable cannot be changed.
+The type is in other words - static. It makes code more robust and less likely to break. It however also makes code
+more verbose.
+Examples: Java C++ etc.
+
+DYNAMIC TYPED PROGRAMMING LANGUAGES:
+Both values and types of a variable are dynamic. They can be changed at will.
